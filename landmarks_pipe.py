@@ -36,9 +36,9 @@ def shape_to_np(dlib_shape, dtype="int"):
 
 
 def landmark_points(show_face=False):
-    p = "shape_predictor_68_face_landmarks.dat"
+    #p = "shape_predictor_68_face_landmarks.dat"
     detector = dlib.get_frontal_face_detector()
-    predictor = dlib.shape_predictor(p)
+    predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 
     video_capture = cv2.VideoCapture(0)
 
